@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+
+<body>
+  <form id="contactForm">
+    <table border="0">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="full_name" placeholder="Enter your name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="user_email" placeholder="Enter your email" required></td>
+      </tr>
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" rows="5" cols="30" placeholder="How can I help you?"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Send Message</button></td>
+      </tr>
+    </table>
+    <div id="formFeedback"></div>
+  </form>
+
+  <script src="form.js"></script>
+</body>
+
+</html>
